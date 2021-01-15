@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+  /*Alle views - allgemein*/
+  header {
+
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    background: url("../img/logo.png") no-repeat left center;
+    background-size: 10% auto;
+      font-family: 'Montserrat', sans-serif;
+      color: darkgrey;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: darkgray solid 1px;
+      margin: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: darkgrey;
+    font-size: 2rem ;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: darkgrey;
+    font-size: 1.50em ;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: darkgrey;
+    font-size: 1.25rem ;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: darkgrey;
+    font-size: 1rem ;
+}
+
+body {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration-color: darkgrey;
+}
+
+
+
+input {
+
+    margin: auto 10% auto 10%;
+    border-color: lightgray;
+}
+
+/*view login.php*/
+
+.login {
+    text-align: center;
+    color: darkgray;
+    margin: 3%;
+}
+
+.div_login {
+
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: auto auto auto auto;
+    color: white;
+    display: block;
+
+}
+#passwort, #username {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration-color: darkgrey;
+}
+
+.btn_login {
+    width: 10rem;
+    /*size: 35px;*/
+    color: white;
+    background-color: seagreen;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-left: 18%;
+    border-radius: 5px 5px 5px 5px;
+    border-color: lightgray;
+
+}
+
+/*alle views ausser login.php */
+.benutzer {
+
+    width: 400px;
+    height: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+    border-left: lightblue 10px solid;
+    padding-left: 2%;
+    padding-bottom: 10%;
+
+}
+
+aside {
+    margin-left: 80%;
+    text-align: left;
+
+}
+
+#vorname, #nachname, #email, #tel {
+
+    width: 60%;
+    text-anchor: start;
+    margin-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+
+/*View frage.php*/
+.btn_ja {
+    width: 15rem;
+    height: 1cm;
+    margin-left: 43%;
+    background-color: seagreen;
+    color: white;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+    border-color: lightgray;
+}
+
+.btn_nein {
+    margin-top: 0.5%;
+    width: 15rem;
+    height: 1cm;
+    margin-left: 43%;
+    background-color: tomato;
+    color: white;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+    border-color: lightgray;
+}
+
+/*View patient1.php*/
+
+.pat1 {
+
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 40%;
+    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+    border-left: lightgray 10px solid;
+}
+
+#vornameP, #nachnameP, #geburi, #patId, #massnahmeNr, #untersZeit, #instanz, #modalitaet, #untersDatum, #studie{
+
+    width: 50%;
+    margin-left: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.form_pat1{
+
+    width: 100%;
+    padding-top:0;
+    padding-right: 0;
+    padding-left: 1%;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+    border-color: lightgray;
+    width: 50%;
+}
+
+#text {
+
+    width: 50%;
+    height: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+    border-color: lightgray;
+}
+.btn_pdf {
+
+    margin: 0% 0% 0.5% 18%;
+    width: 15rem;
+    height: 1cm;
+    background-color: lightgray;
+    color: white;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 3px;
+    border-color: lightgray;
+}
+
+.btn_senden {
+    margin: 2% 0% 1% 18%;
+    width: 15rem;
+    height: 1cm;
+    background-color: seagreen;
+    color: white;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+    border-color: lightgray;
+}
+
+#btn_p1 {
+
+    margin: 1% 45% 0 42%;
+}
+
+
+
+/* View patient2.php */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.1fr);
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+    width: 100%;
+}
+
+
+.container > div {
+    text-align: left;
+    padding: 20px 0 0 10px;
+    font-size: 1rem;
+}
+
+.form_pat2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 0 50%;
+    padding: 0 20% 0 10%;
+    width: 100%;
+
+}
+
+.pat1b {
+    padding-left: 5%;
+    margin: 0 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+    border-left: lightgray 10px solid;
+    width: 150%;
+
+}
+
+.pat2 {
+    padding-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: darkgrey;
+    border-left: lightgray 10px solid;
+    width: 150%;
+
+}
+
+#vornameP2, #nachnameP2, #geburi2, #patId2, #massnahmeNr2, #untersZeit2, #modalitaet2, #untersDatum2 {
+
+
+    width: 50%;
+    margin-left: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+
+}
+
+
+#sucheID, #sucheM, #sucheN, #sucheV {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: black;
+    /*padding: 0% 0% 0% 20%;*/
+    place-content: start;
+    margin-left: 0%;
+    width: 65%;
+    height: 10%;
+
+}
+
+.suche {
+
+    border-left: tomato 10px solid;
+    padding-left: 1%;
+
+}
+
+.btn_search {
+
+    margin: 5% 0% 1% 14%;
+    width: 15rem;
+    height: 1cm;
+    background-color: seagreen;
+    color: white;
+    font-size: medium;
+    border-radius: 5px 5px 5px 5px;
+    border-color: lightgray;
+}
+
+#btn_p2 {
+    width: 100%;
+    margin: 1% 15% 0;
+
+  }
+
+/*.div_btns {*/
+
+/*    width: 30%;*/
+
+/*}*/
+/*Footer/Impressum */
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 5%;
+}
+
+p {
+    text-align: center;
+
+}
