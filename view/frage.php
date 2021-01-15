@@ -11,19 +11,21 @@
 <header>PACS Datenänderungsantrag</header>
 
 <?php
-include "../view/benutzerdata.php";
+include "benutzerdata.php";
 ?>
 
 <body>
 
 <h1>Sind Daten von einem weiteren Patienten benötigt?</h1>
-<a href="patient2.php">
-    <button class="btn_ja">Ja</button></a><br>
-<a href="patient1.php">
-    <button class="btn_nein">Nein</button></a>
+<a href="index.php?action=btn_ja">
+    <button class="btn_ja" name="btn_ja">Ja</button>
+    </a><br>
+<a href="index.php?action=btn_nein">
+    <button class="btn_nein" name="btn_nein">Nein</button>
+    </a>
 
 <footer>
-    <a href="footer.php">Impressum</a>
+    <a href="index.php?action=impressum">Impressum</a>
 </footer>
 
 </body>

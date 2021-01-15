@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" href="../css/style.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
 
     <title>Zwei Patienten</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
 
 <?php
-include "../view/benutzerdata.php";
+include "benutzerdata.php";
 ?>
 
     <div class="container">
@@ -157,7 +157,7 @@ include "../view/benutzerdata.php";
 
 
 <footer>
-    <a href="footer.php">Impressum</a>
+    <a href="index.php?action=impressum">Impressum</a>
 </footer>
 
 </body>

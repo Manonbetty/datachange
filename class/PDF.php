@@ -58,11 +58,17 @@ class PDF extends FPDF
             $pdf = new FPDF();
             $pdf -> AddPage();
             $pdf -> SetTitle($title);
+
             $pdf -> SetFont('Arial', 'B', 15);
+
+            //Charite Logo einfügen
             $pdf -> Cell(0, 10, $title, 1, 1, 'C');
+
+            $pdf ->Cell(40, 10, 'Vorname: ', 1, 0, 'L');
+            $pdf ->Cell(40, 10, $vorname,1, 0, 'C');
             $pdf ->headerTable();
 
-            $pdf ->Output();
+            $pdf ->Output('D');
         }
 //        $mpdf = new \Mpdf\Mpdf();
 //

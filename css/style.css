@@ -84,13 +84,13 @@ input {
 }
 
 .btn_login {
-    width: 10rem;
+    width: 14rem;
     /*size: 35px;*/
     color: white;
     background-color: seagreen;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    margin-left: 18%;
+    margin-left: 1%;
     border-radius: 5px 5px 5px 5px;
     border-color: lightgray;
 
@@ -252,9 +252,9 @@ select {
 
 .form_pat2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 0 0 50%;
-    padding: 0 20% 0 10%;
+    grid-template-columns: repeat(2, 18cm);
+    margin: 0 0 0 0;
+    padding: 0 0 0 10%;
     width: 100%;
 
 }
@@ -326,7 +326,7 @@ select {
 
 #btn_p2 {
     width: 100%;
-    margin: 1% 15% 0;
+    margin: 1% 30% 0;
 
   }
 

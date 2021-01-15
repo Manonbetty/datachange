@@ -1,38 +1,38 @@
 <?php
-require('../fpdf/fpdf.php');
+//require('../fpdf/fpdf.php');
 
-
-    if($_POST){
-        $vorname = $_POST ['vornameP'];
-        $nachname = $_POST ['nachnameP'];
-        $geburi = $_POST['geburi'];
-        $patID = $_POST['patId'];
-        $unterDatum = $_POST['untersDatum'];
-        $massID = $_POST['massnahmeNr'];
-        $studie = $_POST['studie'];
-        $unterZeit = $_POST['untersZeit'];
-        $modalitaet = $_POST['modalitaet'];
-        $instanz = $_POST['instanz'];
-        $begruendung = $_POST['begruendung'];
-        $title = 'PACS Datenaenderungsantrag';
-        $patient = 'Patient';
-
-        $pdf = new FPDF();
-        $pdf -> AddPage();
-        $pdf -> SetTitle($title);
-
-        $pdf -> SetFont('Arial', 'B', 15);
-
-        //Charite Logo einfügen
-        $pdf -> Cell(0, 10, $title, 1, 1, 'C');
-
-        $pdf -> Cell(40, 10, $patient, 1, 1, 'C');
-        $pdf ->Cell(40, 10, 'Vorname: ', 1, 0, 'L');
-        $pdf ->Cell(40, 10, $vorname,1, 0, 'C');
-
-        //D = Download
-        $pdf ->Output('D');
-    }
+//
+//    if($_POST){
+//        $vorname = $_POST ['vornameP'];
+//        $nachname = $_POST ['nachnameP'];
+//        $geburi = $_POST['geburi'];
+//        $patID = $_POST['patId'];
+//        $unterDatum = $_POST['untersDatum'];
+//        $massID = $_POST['massnahmeNr'];
+//        $studie = $_POST['studie'];
+//        $unterZeit = $_POST['untersZeit'];
+//        $modalitaet = $_POST['modalitaet'];
+//        $instanz = $_POST['instanz'];
+//        $begruendung = $_POST['begruendung'];
+//        $title = 'PACS Datenaenderungsantrag';
+//        $patient = 'Patient';
+//
+//        $pdf = new FPDF();
+//        $pdf -> AddPage();
+//        $pdf -> SetTitle($title);
+//
+//        $pdf -> SetFont('Arial', 'B', 15);
+//
+//        //Charite Logo einfügen
+//        $pdf -> Cell(0, 10, $title, 1, 1, 'C');
+//
+//        $pdf -> Cell(40, 10, $patient, 1, 1, 'C');
+//        $pdf ->Cell(40, 10, 'Vorname: ', 1, 0, 'L');
+//        $pdf ->Cell(40, 10, $vorname,1, 0, 'C');
+//
+//        //D = Download
+//        $pdf ->Output('D');
+//    }
 ?>
 
 
@@ -43,18 +43,20 @@ require('../fpdf/fpdf.php');
 <head>
     <meta charset="UTF-8">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <link type="text/css" href="../css/style.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
 
     <title>Ein Patient</title>
 </head>
 
 <header>PACS Datenänderungsantrag</header>
 
-//<?php
-include "../view/benutzerdata.php";
-//?>
+
+<?php
+include "benutzerdata.php";
+?>
+
 <body>
-        <form action="" method="post" class="form_pat1">
+        <form action="action" method="post" class="form_pat1">
 
             <div class="pat1">
 
@@ -94,6 +96,7 @@ include "../view/benutzerdata.php";
                     <option value="Kinderradiologie">Kinderradiologie</option>
                     <option value="andere">Andere</option>
                     <?php
+//                    Textarea einfügen ->JS?
 
                     ?>
                 </select><br>
@@ -129,7 +132,7 @@ include "../view/benutzerdata.php";
 
 
 <footer>
-    <a href="footer.php">Impressum</a>
+    <a href="index.php?action=impressum">Impressum</a>
 </footer>
 
 </body>

@@ -8,19 +8,21 @@
     <title>Anmeldung</title>
 </head>
 <body>
-<aside>
-    <div class="benutzer">
-        <h3>Benutzer</h3>
-        <!--        Hier werden die Daten von AD geholt bzw. vom RIS?-->
-        <label for="vorname">Vorname</label><br>
-        <input id="vorname"/><br>
-        <label for="nachname">Nachname</label><br>
-        <input id="nachname"/><br>
-        <label for="email">Email</label><br>
-        <input id="email"/><br>
-        <label for="tel">Telefon Nr.</label><br>
-        <input id="tel"/>
-    </div>
-</aside>
+    <aside>
+        <form action="index.php" method="post">
+            <div class="benutzer">
+                <h3>Benutzer</h3>
+                <!--        Hier werden die Daten von AD geholt bzw. vom RIS?-->
+                <label for="vorname">Vorname</label><br>
+                <input id="vorname" name="vorname" value="Beate"/><br>
+                <label for="nachname">Nachname</label><br>
+                <input id="nachname" name="nachname" value="Sissi"/><br>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" value="beate.sissi@charite.de"/><br>
+                <label for="tel">Telefon Nr.</label><br>
+                <input id="tel" name="tel" value="030 123 456 789"/>
+            </div>
+        </form>
+    </aside>
 </body>
 </html>
